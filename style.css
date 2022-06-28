@@ -63,7 +63,7 @@ h1, h2, h3, h4 {
     transition: all 0.5s;
 }
 
-/*  Headline section */
+/*  Heading section */
 #heading {
     padding: 100px 20px 20px;
     position: relative;
@@ -108,10 +108,10 @@ h1, h2, h3, h4 {
     font-size: 20px;
     font-weight: 900;
     font-family: 'COCOGOOSE', Georgia, serif;
-  }
+}
   
-  /* STATS */
-  #statistics {
+/* Statistics */
+#statistics {
     background-image: url('./Assets/blackbackground.jpg');
     padding: 20px;
     display: flex;
@@ -169,7 +169,7 @@ h1, h2, h3, h4 {
     font-size: 14px;
 }
   
-button {
+#reg {
     margin: 20px;
     color: white;
     padding: 20px;
@@ -180,12 +180,12 @@ button {
     transition: all 0.5s;
 }
   
-button:hover {
+#reg button:hover {
     transform: translateY(-4px);
 }
   
-  /* Teacher Section */
-  #teacher-section {
+/* Teacher Section */
+#teachers-section {
     background: white;
     padding: 20px;
     margin-top: 40px;
@@ -195,65 +195,52 @@ button:hover {
     justify-content: center;
     align-items: center;
     gap: 20px;
-  }
+}
   
-  .section-intro {
+.facilitators {
     margin-bottom: 30px;
     border-bottom: 3px solid #ec5242;
-  }
+}
   
-  #teacher-grid {
+.facilitators-info {
     display: grid;
     gap: 20px;
-  }
+}
   
-  .teacher-container {
+.teachers {
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: 40% 50%;
     gap: 20px;
     max-width: 370px;
-  }
+}
   
-  .teacher-image {
+.teacher-img {
     display: grid;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  .teacher-name hr {
+.name {
     width: 30px;
     background-color: #d3d3d3;
     height: 1px;
     border: none;
     margin-top: 5px;
-  }
+}
   
-  .teacher-subject {
+.designation {
     font-style: italic;
-  }
+}
   
-  .teacher-description {
+.teacher-text {
     font-size: 12px;
     margin-top: 10px;
-  }
+}
   
-  #view-more {
-    font-size: 18px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    border: 1px solid #d3d3d3;
-    background-color: #fafafa;
-    border-radius: 4px;
-    gap: 5px;
-  }
-  
-  /* Sponsors Section */
-  #sponsors {
+/* Sponsors Section */
+#sponsor-sections {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -261,40 +248,40 @@ button:hover {
     padding: 20px;
     background-color: #272a31;
     color: #8d8d8d;
-  }
+}
   
-  #sponsors-container {
+#sponsors-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 60%;
     flex-wrap: wrap;
     gap: 10px;
-  }
+}
   
-  #sponsors-container * {
+#sponsors-container * {
     width: 20%;
     filter: grayscale(100%) contrast(30%);
     transition: filter 1s 1ms;
     margin: 3px 5px;
-  }
+}
   
-  #sponsors-container *:hover {
+#sponsors-container *:hover {
     filter: grayscale(0%) contrast(100%);
-  }
+}
   
-  /* Footer */
-  footer {
+/* Footer */
+footer {
     display: flex;
     justify-content: center;
     padding: 20px;
-  }
+}
   
-  /* Desktop Version */
-  @media only screen and (min-device-width: 768px) {
-    /* Header */
+/* Desktop Version */
+@media only screen and (min-device-width: 768px) {
+ /* Heading section */
   
-    .mobile-nav {
+   .mobile-nav {
       display: none;
     }
   
@@ -305,21 +292,16 @@ button:hover {
       padding-left: 250px;
     }
   
-    .nav-logo {
+    #logo {
       display: inline;
       height: 60px;
-    }
-  
-    .nav-logo img {
-      height: 100%;
-      width: auto;
     }
   
     .close-menu * {
       padding-right: 20px;
     }
   
-    .flex-list {
+    #nav-links {
       display: flex;
       list-style: none;
       justify-content: center;
@@ -327,104 +309,74 @@ button:hover {
       gap: 20px;
     }
   
-    .flex-list *:hover {
+    #nav-links *:hover {
       cursor: pointer;
       color: #ec5242;
     }
   
-    .last-child {
+    #last-child {
       border: 4px solid #ec5242;
     }
   
-    .desktop-nav-2 {
-      display: flex;
-      justify-content: end;
-      background-color: #3e3e3e;
-      color: white;
-      padding-right: 170px;
-    }
-  
     /* Headline Section */
-  
-    #headline-section {
+    #heading {
       display: flex;
       flex-direction: column;
-      background-image: url('../images/teacher-kids-blue.png');
+      background-image: url('./Assets/background.jpg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       padding-top: 200px;
       padding-left: 250px;
+      opacity: 0.2;
+      content: "";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
     }
   
-    .intro-heading {
+    #heading-text {
       font-size: 55px;
     }
   
-    #intro-text {
+    #heading-description {
       max-width: 600px;
       font-size: 24px;
     }
   
-    .head-img {
-      display: none;
-    }
-  
-    #date-location {
+    .heading-contact-info {
       color: white;
       font-size: 25px;
     }
   
-    /* STATS SECTION */
-    #stats {
+    /* Statistics Section */
+    #statistics {
       margin-top: 30px;
       padding: 100px;
     }
   
-    #stats-grid {
+    #statistics-grid {
       grid-template-columns: repeat(5, auto);
       width: 80%;
     }
   
-    .stats-card {
+    .card {
       display: grid;
       text-align: center;
     }
   
     /* TEACHERS SECTION */
-    #teacher-grid {
+    .facilitators-info {
       grid-template-columns: auto auto;
     }
   
-    .teacher-container {
+    .teachers {
       max-width: 500px;
     }
   
-    #view-more {
-      display: none;
-    }
-  
-    #sponsors {
+    #sponsors-section {
       padding: 100px;
     }
-  }
-  ;
-}
-
-/* Desktop version */
-/* @media screen and (min-width: 750px) {
-    body {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    header {
-      position: absolute;
-      align-self: center;
-    }
-
-    .mobile-nav {
-        display: none;
-    }
-
-} */ 
+};
