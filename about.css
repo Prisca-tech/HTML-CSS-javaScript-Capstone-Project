@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    width: 400px;
+    height: 250px;
+}
+
+header {
+    background-color: fff;
+    position: relative; 
+}
+
+
+
+h1, h2, h3, h4 {
+    font-family: 'COCOGOOSE', Georgia, serif;
+}
+
+.fa-solid {
+    font-size: 30px;
+}
+
+.mobile-nav {
+    padding: 20px;
+}
+
+.desktop-nav{
+    display: none;
+} 
+.desktop-nav.show {
+    display: block;
+    background: fff;
+    width: 100%;
+    height: 95vh;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 20px;
+    position: absolute;
+    top: 0;
+    box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
+    left: 0;
+    border-radius: 0 0 50px 50px;
+    font-size: 20px;
+    z-index: -1;
+    transition: all 0.5s;
+}
