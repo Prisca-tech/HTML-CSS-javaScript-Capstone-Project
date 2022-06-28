@@ -4,9 +4,173 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- External styling (icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
+    <!-- My style -->
+    <link rel="stylesheet" href="style.css">
+    <title>Capstone-project</title>
 </head>
 <body>
-    
+    <!-- Navigation section -->
+    <header>
+        <div class="mobile-nav">
+            <i class="fa-solid fa-bars" id="hamburger"></i>
+        </div>
+        <div class="desktop-nav">
+            <a href="Index.html" id="logo">HackingHerCode</a>
+            <ul id="nav-links">
+                <li><a href="#heading">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#register-section" >Register</a></li>
+                <li><a href="#sponsor-sections">Sponsors</a></li>
+                <li><a href="#teachers-section">Teachers</a></li>
+                <li><a href="#">HackingHerCode</a></li>
+              </ul>
+        </div>
+    </header>
+    <main>
+        <!-- Heading section -->
+        <section>
+            <div id="heading">
+                <h1 id="heading-text">
+                    HackingHercode Bootcamp 2022.
+                  </h1>
+                </div>
+                <div id="heading-description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam dolor dicta 
+                    recusandae ad repellat laboriosam facere quis beatae, quo ex. Voluptates debitis eos non sunt?
+                  </p>
+                </div>
+                <div class="heading-contact-info">
+                 <p class="text">2022.06.27(MON) ~ 30(THURS)</p> 
+                 <p>@ Priscaville Gardens Badagry</p>
+                </div>
+            </div>
+        </section>
+        <!-- Statistics section -->
+        <section id="statistics">
+            <h2 class="stats-heading">Statistics</h2>
+          <div class="statistics-grid">
+              <!-- Card One -->
+              <div class="card">
+                  <div class="icon">
+                    <i class="fa-solid fa-person-chalkboard"></i>                  </div>
+                <div class="title">
+                  <h4>Teachers</h4>
+                </div>
+                <div class="description">
+                  <p>We have trained proffessionals who are mostly examiners.</p>
+                </div>
+                <!-- Card two -->
+              <div class="card">
+                <div class="icon">
+                   <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+              <div class="title">
+                <h4>Campers</h4>
+              </div>
+              <div class="description">
+                <p>We have trained proffessionals who are mostly examiners.</p>
+              </div>
+              <!-- Card three -->
+              <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-people-group"></i>                </div>
+              <div class="title">
+                <h4>Courses</h4>
+              </div>
+              <div class="description">
+                <p>We have trained proffessionals who are mostly examiners.</p>
+              </div>
+              <!-- Card four -->
+              <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-person-hiking"></i>                </div>
+              <div class="title">
+                <h4>ExtraCurricullumn</h4>
+              </div>
+              <div class="description">
+                <p>We have trained proffessionals who are mostly examiners.</p>
+              </div>
+              <!-- Card five -->
+              <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-globe"></i>                </div>
+              <div class="title">
+                <h4>Countries</h4>
+              </div>
+              <div class="description">
+                <p>We have trained proffessionals who are mostly examiners.</p>
+              </div>
+            </div>
+            <button>Register for Free</button>
+        </section>
+        <!-- Teachers info section -->
+        <section id="teachers-section">
+            <h2>Facilitators</h2>
+            <div class="facilitators">
+                <!-- Teacher 1 -->
+                <div class="teachers">
+                 <div class="img">
+                    <img src="./Assets/CareerCoach.jpg" alt="photo of career-coach">
+                 </div>
+                 <div class="name">Eva Alordia</div>
+                 <div class="designation">Career Coach</div>
+                 <div class="text"><p>Lorem, ipsum dolor sit amet consectetur adipisicing</p></div>
+                 </div>
+                <!-- Teacher 2 -->
+                <div class="teachers">
+                 <div class="img"><img src="./Assets/Ben.jpg" alt="photo of backend dev"></div>
+                 <div class="name">Benedict Simon</div>
+                 <div class="designation">Backend Dev.</div>
+                 <div class="text"><p>Lorem, ipsum dolor sit amet consectetur adipisicing</p></div>
+                </div>
+                <!-- Teacher 3 -->
+                <div class="teachers">
+                 <div class="img"><img src="./Assets/Precious.jpg" alt=""></div>
+                 <div class="name">Precious Udegbue</div>
+                 <div class="designation">Front-end Dev</div>
+                 <div class="text"><p>Lorem, ipsum dolor sit amet consectetur adipisicing</p></div>
+                </div>
+                <!-- Teacher 4 -->
+                <div class="teachers">
+                 <div class="img"><img src="./Assets/killy.jpg" alt=""></div>
+                 <div class="name">Kingsley Okine</div>
+                 <div class="designation">Design/Tech Support</div>
+                 <div class="text"><p>Lorem, ipsum dolor sit amet consectetur adipisicing</p></div>
+                </div>
+                <!-- Teacher 5 -->
+                <div class="teachers">
+                 <div class="img"><img src="./Assets/bem.webp" alt=""></div>
+                 <div class="name">Abe Precious</div>
+                 <div class="designation">Student Success</div>
+                 <div class="text"><p>Lorem, ipsum dolor sit amet consectetur adipisicing</p></div>
+                </div>
+                <!-- Teacher 6 -->
+                <div class="teachers">
+                 <div class="img"><img src="./Assets/Administrator.jpg" alt="photo of our Administrator"></div>
+                 <div class="name">Grace Godfrey</div>
+                 <div class="designation">Administrator</div>
+                 <div class="text"><p>Lorem, ipsum dolor sit amet consectetur adipisicing</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Sponsors section  -->
+    <footer id="sponsor-sections">
+        <img src="./Assets/SLALogo.png" alt="SLA logo">
+        <img src="./Assets/linkedin.jpg" alt="linkedin logo">
+        <img src="./Assets/youtube.jpg" alt="youtube logo">
+        <img src="./Assets/facebook.jpg" alt="facebook logo">
+        <img src="./Assets/google.jpg" alt="google logo">
+        <p>Hope Alive Foundation</p>
+        <a href="https://mail.google.com/mail/u/0">&copy; @oyomepriscilla@gmail.com</a>
+    </footer>
+
 </body>
 </html>
