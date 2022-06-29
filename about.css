@@ -42,7 +42,7 @@ h1, h2, h3, h4 {
 } 
 .desktop-nav.show {
     display: block;
-    background: fff;
+    background: #fff;
     width: 100%;
     height: 95vh;
     text-align: center;
@@ -52,7 +52,7 @@ h1, h2, h3, h4 {
     top: 0;
     box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
     left: 0;
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 10px 10px;
     font-size: 20px;
     z-index: -1;
 }
@@ -220,8 +220,15 @@ footer {
         font-size: 35px;
     }
 
+    #event-container {
+        grid-template-columns: repeat(2, auto);
+        display: grid;
+        justify-content: center;
+        gap: 30px;
+    }
     .events{
         padding: 60px;
+        display: grid;
     }
 
     .events h4 {
