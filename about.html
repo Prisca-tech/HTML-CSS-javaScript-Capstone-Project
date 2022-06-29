@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- External styling -->
     <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
     <!-- My style -->
     <link rel="stylesheet" href="about.css">
     <title>about</title>
@@ -13,19 +17,19 @@
 <body>
     <!-- Hamburger Navigation section -->
     <header>
-        <div class="mobile-nav">
+        <div class="mobile-nav"> 
             <i class="fa-solid fa-bars" id="hamburger"></i>
         </div>
         <!-- Navigation section -->
 
-        <div class="desktop-nav">
-            <a href="#heading" id="logo">HackingHerCode</a>
-            <ul id="nav-links" class="close-menu">
-                <li><a href="#heading" id="home">Home</a></li>
+        <div class="desktop-nav" id="desktop-nav">
+            <a href="./Index.html" id="logo">HackingHerCode</a>
+            <ul id="nav-links" id="close-menu">
+                <li><a href="Index.html" id="home">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#register-section" id="register">Register</a></li>
-                <li><a href="#sponsor-sections" id="sponsors">Sponsors</a></li>
-                <li><a href="#teachers-section" id="teachers">Teachers</a></li>
+                <li><a href="#" id="register">Register</a></li>
+                <li><a href="#" id="sponsors">Sponsors</a></li>
+                <li><a href="#" id="teachers">Teachers</a></li>
                 <li><a href="#" id="last">HackingHerCode</a></li>
               </ul>
         </div>
@@ -48,13 +52,13 @@
                 </div>
                 <div class="about-contact-info">
                  <p>Please Contact us Via Email: @oyomepriscilla@gmail.com</p> 
-                 <p>Or at the venue @Priscaville Gardens Badagry</p>
+                 <!-- <p>Or at the venue @Priscaville Gardens Badagry</p> -->
                 </div>
             </div>
         </section>
         <section class="about-initiative"> 
             <!-- About the initiative -->
-            <h2>More about HackingHerCode Initiative</h2>
+            <h2>HackingHerCode Initiative</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                  Nisi, maiores! Amet tenetur ducimus in vero. Quod quasi harum 
                  totam accusamus laborum magnam ratione minus! Alias, natus. 
@@ -67,22 +71,25 @@
              <div id="event-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                  Fugiat sed nostrum minima similique animi quis</div>
              <div id="event-card" class="event1">
-                
-                 <h2>2018</h2>
-                 <p>5 years ago</p>
+                <div class="event-text">
+                    <h2>2018</h2>
+                    <p>5 years ago</p>
+                </div>
              </div>
-             <div id="event-card" class="event1">
-                
+             <div id="event-card" class="event2">
+                <div class="event-text">
                  <h2>2022</h2>
                  <p>Today</p>
+                </div>
              </div>
             </div>
         </section>
     </main>
     <!-- Footer section -->
     <footer>
-        <a href="#heading" id="logo">HackingHerCode</a>
-    <p id="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta debitis deleniti rem aperiam, architecto quae ipsam quos sit! Vero molestias nulla soluta voluptatem laborum quaerat sapiente est debitis laboriosam.</p>
+        <p>&copy HackingHerCode</p>
     </footer>
+    <script src="./about.js"></script>
+
 </body>
 </html>

@@ -18,11 +18,6 @@ a {
     color: inherit;
 }
 
-img {
-    width: 400px;
-    height: 250px;
-}
-
 header {
     background-color: fff;
     position: relative; 
@@ -45,6 +40,7 @@ h1, h2, h3, h4 {
 .desktop-nav{
     display: none;
 } 
+
 .desktop-nav.show {
     display: block;
     background: fff;
@@ -67,6 +63,7 @@ h1, h2, h3, h4 {
 #heading {
     padding: 100px 20px 20px;
     position: relative;
+
 }
 
 #heading::after {
@@ -119,13 +116,13 @@ h1, h2, h3, h4 {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    position: relative;
     color: fff;
 }
   
 .statistics-grid {
-    display: grid;
+    display: flex;
     gap: 10px;
+    flex-direction: column;
 }
   
 .stats-heading {
@@ -203,23 +200,23 @@ h1, h2, h3, h4 {
 }
   
 .facilitators-info {
-    display: grid;
-    gap: 20px;
-}
-  
-.teachers {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 40% 50%;
-    gap: 20px;
-    max-width: 370px;
+    display: flex;
+    border: 1px solid red;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
 }
   
 .teacher-img {
     display: grid;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
+    width: 35%;
+}
+
+.teacher-img img {
+  width: 100%;
 }
   
 .name {
@@ -278,7 +275,7 @@ footer {
 }
   
 /* Desktop Version */
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-device-width: 750px) {
  /* Heading section */
   
    .mobile-nav {
@@ -288,13 +285,7 @@ footer {
     .desktop-nav {
       display: flex;
       justify-content: space-between;
-      padding-right: 170px;
-      padding-left: 250px;
-    }
-  
-    #logo {
-      display: inline;
-      height: 60px;
+      padding: 20px;
     }
   
     .close-menu * {
@@ -320,30 +311,20 @@ footer {
   
     /* Headline Section */
     #heading {
-      display: flex;
-      flex-direction: column;
-      background-image: url('./Assets/background.jpg');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
       padding-top: 200px;
       padding-left: 250px;
-      opacity: 0.2;
-      content: "";
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: -1;
+      
     }
   
     #heading-text {
-      font-size: 55px;
+      font-size: 60px;
     }
   
     #heading-description {
-      max-width: 600px;
+      max-width: fit-content;
       font-size: 24px;
+      text-align: center;
+      width: 50%;
     }
   
     .heading-contact-info {

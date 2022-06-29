@@ -1,3 +1,4 @@
+// Display teahers section dynamically
 const myArray = [
     {
         //  Teacher 1
@@ -45,13 +46,34 @@ const myArray = [
 const cardContainer = document.getElementById('teachers-section');
 
 const cards = myArray.map((card) => ` <div class="facilitators-info">
-      <div class="teachers">
                  <div class="teacher-img"><img src="${card.image}" alt=""></div>
+                 <div>
                  <div class="name">${card.teacherName}</div>
                  <div class="designation">${card.designation}</div>
                  <div class="teacher-text"><p>${card.text}</p></div>
                  </div>
-      </div>
+                 </div>
+    
     </div>`).join('');
 
 cardContainer.innerHTML += cards;
+
+// Display mobile menu
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('desktop-nav')
+const menuItems = document.querySelector('#close-menu');
+
+function openMenu() {
+  hamburger.classList.toggle('fa-xmark');
+  menu.classList.toggle('show');
+  document.body.style.overflow = document.body.style.overflow === 'hidden' ? 'auto' : 'hidden';
+}
+
+function closeMenu() {
+  hamburger.classList.replace('fa-xmark', 'fa-bars');
+  menu.classList.replace('show');
+  document.body.style.overflow = document.body.style.overflow === 'hidden' ? 'auto' : 'auto';
+}
+
+hamburger.addEventListener('click', openMenu);
+menuItems.addEventListener('click', closeMenu);
