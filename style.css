@@ -100,10 +100,11 @@ h1, h2, h3, h4 {
 #heading-description {
     background-color: #f5f5f5;
     box-shadow: rgb(0 0 0 / 20%) 0 0 6px;
+    padding: 10px;
 }
   
 .heading-contact-info {
-    
+    padding: 10px;
     font-size: 18px;
 }
 
@@ -266,14 +267,23 @@ font-size: 1.5rem;
     background-color: #272a31;
     color: #8d8d8d;
 }
-  
+
+#line {
+    width: 30px;
+    margin: auto;
+    border: 1px solid #ec5242;
+    background-color: #ec5242;
+
+}
+
 #sponsors-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 80%;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 10px;
 }
   
 #sponsors-container * {
@@ -298,14 +308,16 @@ footer {
 @media only screen and (min-device-width: 768px) {
 
  /* Heading section */
- #heading {
-    padding: 0;
- }
+    #heading {
+       padding: 0;
+    }
 
- #heading-text {
-    width: 700px;
-    font-size: 60px;
- }
+    #heading-text {
+        font-size: 62px;
+        width: 700px;
+        padding-top: 50px;
+    }
+    
   
    .mobile-nav {
       display: none;
@@ -320,6 +332,11 @@ footer {
     .close-menu * {
       padding-right: 20px;
     }
+
+    #logo {
+        font-size: 20px;
+       font-weight: 900;
+    }
   
     #nav-links {
       display: flex;
@@ -327,6 +344,8 @@ footer {
       justify-content: center;
       align-items: center;
       gap: 20px;
+      font-size: 18px;
+      font-weight: 600;
     }
   
     #nav-links *:hover {
@@ -336,6 +355,8 @@ footer {
   
     #last-child {
       border: 4px solid #ec5242;
+      color: #ec5242;
+      padding: 0 20px;
     }
   
     /* Headline Section */
@@ -344,9 +365,9 @@ footer {
     #heading-description {
       width: 700px;
       font-size: 24px;
-    padding: 10px;
-    border: 2px solid rgb(206, 181, 181);
-    margin-top: 20px;
+      padding: 10px;
+      border: 2px solid rgb(206, 181, 181);
+      margin-top: 20px;
     }
   
     .heading-contact-info {
@@ -356,12 +377,27 @@ footer {
     }
     
     #one {
-        background-image: url('./Assets/background.jpg') ;
-        background-size: cover;
-        border: 1px solid red;
         padding: 10rem 5rem 8rem 4rem;
     }
+
+    #one::after {
+        background: url(./Assets/background.jpg);
+        opacity: 0.2;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -100;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
     
+    .text {
+        font-size: 30px;
+    }
   
     /* Statistics Section */
     #statistics {
@@ -402,15 +438,23 @@ footer {
     .teacher-img {
         display: flex;
         align-items: center;
-        width: 40%;
+        width: 300px;
     }
 
     .teacher-img img {
-      height: 200px;
+       height: 200px; 
     }
   
     .teachers {
-      max-width: 500px;
+      max-width: 600px;
+    }
+
+   .designation, .teacher-text {
+        font-size: 20px;
+    } 
+
+    .name {
+        font-size: 26px;
     }
   
     #sponsors-section {

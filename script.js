@@ -2,7 +2,7 @@
 const myArray = [
     {
         //  Teacher 1
-       image:'./Assets/CareerCoach.jpg',
+       image:'./Assets/career.jpg',
        teacherName: 'Eva Alordia',
        designation: 'Career Coach',
        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing',
