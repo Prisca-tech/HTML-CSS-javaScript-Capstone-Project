@@ -19,7 +19,7 @@
 - Behance: [@adgio07](https://www.behance.net/adagio07)
 
 ## Live Demo
-[Live Demo Link](https://prisca-tech.github.io/HTML-CSS-javaScript-Capstone-Project/)
+[Live Demo Link]()
 
 ## Author
 👤 **Okoro Priscilla Oyome**
