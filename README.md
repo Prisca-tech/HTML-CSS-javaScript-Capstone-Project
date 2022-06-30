@@ -2,10 +2,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # HTML-CSS-javaScript-Capstone-Project
-## Live Video
-[Video Link](https://www.loom.com/share/342453aa60634bdd8b0e9f98a537b946)
 
-> HTML/CSS & JavaScript capstone project.
+> HTML/CSS & JavaScript capstone project. This project is to test and showcase all or most of what i have learnt in the current module(HTML, CSS and javaScript)
 
 ## Built With
 
@@ -14,12 +12,12 @@
 - javascript
 
 
-## Original Design by
-👤 **Cindy Shin**
-- Behance: [@adgio07](https://www.behance.net/adagio07)
-
 ## Live Demo
-[Live Demo Link]()
+[Live Demo Link](https://prisca-tech.github.io/HTML-CSS-javaScript-Capstone-Project/)
+
+## Live Video
+[Video Link](https://www.loom.com/share/342453aa60634bdd8b0e9f98a537b946)
+
 
 ## Author
 👤 **Okoro Priscilla Oyome**
@@ -32,6 +30,9 @@
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+[Issues Link](https://github.com/Prisca-tech/HTML-CSS-javaScript-Capstone-Project/issues)
+
+
 
 ## Show your support
 
@@ -39,10 +40,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone who's code/resource was used
-- Inspiration
-- etc
-
+## Original Design by
+👤 **Cindy Shin**
+- Behance: [@adgio07](https://www.behance.net/adagio07)
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.

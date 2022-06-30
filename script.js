@@ -62,7 +62,7 @@ cardContainer.innerHTML += cards;
 // Display mobile menu
 const hamburger = document.getElementById('hamburger');
 const menu = document.getElementById('desktop-nav');
-const menuItems = document.querySelector('.close-menu');
+const menuItems = document.querySelector('#close-menu');
 
 function openMenu() {
   hamburger.classList.toggle('fa-xmark');

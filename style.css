@@ -42,7 +42,8 @@ h4 {
   padding: 20px;
 }
 
-.desktop-nav {
+.desktop-nav,
+.desktop-nav-2 {
   display: none;
 }
 
@@ -69,12 +70,12 @@ h4 {
 }
 
 /*  Heading section */
-#heading {
+.heading {
   padding: 100px 20px 20px;
   position: relative;
 }
 
-#heading::after {
+.heading::after {
   background: url(./Assets/background.jpg);
   opacity: 0.2;
   content: "";
@@ -98,10 +99,11 @@ h4 {
   -webkit-text-fill-color: transparent;
 }
 
-#heading-description {
+.heading-description {
   background-color: #f5f5f5;
   box-shadow: rgb(0 0 0 / 20%) 0 0 6px;
   padding: 10px;
+  color: #515151;
 }
 
 .heading-contact-info {
@@ -116,7 +118,7 @@ h4 {
 }
 
 /* Statistics */
-#statistics {
+.statistics {
   background-image: url('./Assets/blackbackground.jpg');
   padding: 20px;
   display: flex;
@@ -174,7 +176,7 @@ h4 {
   font-size: 14px;
 }
 
-#reg {
+.reg {
   margin: 20px;
   color: white;
   padding: 20px;
@@ -185,12 +187,12 @@ h4 {
   transition: all 0.5s;
 }
 
-#reg button:hover {
+.reg button:hover {
   transform: translateY(-4px);
 }
 
 /* Teacher Section */
-#teachers-section {
+.teachers-section {
   background: white;
   padding: 20px;
   margin-top: 40px;
@@ -246,6 +248,7 @@ h4 {
 .name p {
   margin-top: -10px;
   font-weight: 700;
+  font-size: 16px;
 }
 
 .designation {
@@ -259,7 +262,7 @@ h4 {
 }
 
 /* Sponsors Section */
-#sponsor-sections {
+.sponsor-sections {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -269,31 +272,31 @@ h4 {
   color: #8d8d8d;
 }
 
-#line {
+.line {
   width: 30px;
   margin: auto;
   border: 1px solid #ec5242;
   background-color: #ec5242;
 }
 
-#sponsors-container {
+.sponsors-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 90%;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 10px;
 }
 
-#sponsors-container * {
-  width: 20%;
+.sponsors-container * {
+  width: 15%;
   filter: grayscale(100%) contrast(30%);
   transition: filter 1s 1ms;
   margin: 3px 5px;
 }
 
-#sponsors-container *:hover {
+.sponsors-container *:hover {
   filter: grayscale(0%) contrast(100%);
 }
 
@@ -302,12 +305,13 @@ footer {
   display: flex;
   justify-content: center;
   padding: 20px;
+  background-color: #f5f5f5;
 }
 
 /* Desktop Version */
 @media only screen and (min-device-width: 768px) {
   /* Heading section */
-  #heading {
+  .heading {
     padding: 0;
   }
 
@@ -331,12 +335,20 @@ footer {
     padding-right: 20px;
   }
 
-  #logo {
+  .logo {
     font-size: 20px;
     font-weight: 900;
   }
 
-  #nav-links {
+  .desktop-nav-2 {
+    display: flex;
+    justify-content: end;
+    background-color: #3e3e3e;
+    color: white;
+    padding-right: 170px;
+  }
+
+  .nav-links {
     display: flex;
     list-style: none;
     justify-content: center;
@@ -346,12 +358,12 @@ footer {
     font-weight: 600;
   }
 
-  #nav-links *:hover {
+  .nav-links *:hover {
     cursor: pointer;
     color: #ec5242;
   }
 
-  #last-child {
+  .last-child {
     border: 4px solid #ec5242;
     color: #ec5242;
     padding: 0 20px;
@@ -359,7 +371,7 @@ footer {
 
   /* Headline Section */
 
-  #heading-description {
+  .heading-description {
     width: 700px;
     font-size: 24px;
     padding: 10px;
@@ -373,12 +385,12 @@ footer {
     margin-top: 50px;
   }
 
-  #one {
+  .one {
     padding: 10rem 5rem 8rem 4rem;
     margin-left: 60px;
   }
 
-  #one::after {
+  .one::after {
     background: url(./Assets/background.jpg);
     opacity: 0.2;
     content: "";
@@ -398,7 +410,7 @@ footer {
   }
 
   /* Statistics Section */
-  #statistics {
+  .statistics {
     margin-top: 30px;
     padding: 4rem 2rem;
   }
@@ -425,8 +437,12 @@ footer {
     gap: 30px;
   }
 
+  .teacher-img img {
+    height: 200px;
+  }
+
   /* TEACHERS SECTION */
-  #facilitators-persons {
+  .facilitators-persons {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 30px;
@@ -439,24 +455,20 @@ footer {
     width: 300px;
   }
 
-  .teacher-img img {
-    height: 200px;
-  }
-
   .teachers {
     max-width: 600px;
   }
 
   .designation,
   .teacher-text {
-    font-size: 20px;
+    font-size: 13px;
   }
 
   .name {
     font-size: 26px;
   }
 
-  #sponsors-section {
+  .sponsors-section {
     padding: 100px;
   }
 
