@@ -1,133 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- External styling (icons) -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
-    <!-- My style -->
-    <link rel="stylesheet" href="style.css">
-    <title>Capstone-project</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- External styling (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
+  <!-- My style -->
+  <link rel="stylesheet" href="style.css">
+  <title>Capstone-project</title>
 </head>
 <body>
-    <!-- Navigation section -->
-    <header>
-        <div class="mobile-nav">
-            <i class="fa-solid fa-bars" id="hamburger"></i>
+  <!-- Navigation section -->
+  <header>
+    <div class="mobile-nav">
+      <i class="fa-solid fa-bars" id="hamburger"></i>
+    </div>
+    <div class="desktop-nav" id="desktop-nav">
+      <a href="Index.html" id="logo">HackingHerCode</a>
+      <ul id="nav-links" class="close-menu">
+        <li><a href="#heading">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#reg">Register</a></li>
+        <li><a href="#sponsor-sections">Sponsors</a></li>
+        <li><a href="#teachers-section">Teachers</a></li>
+        <li><a href="#" id="last-child">HackingHerCode</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <!-- Heading section -->
+    <section id="one">
+      <div id="heading">
+        <h1 id="heading-text" class='show'>
+          HackingHercode Bootcamp 2022.
+        </h1>
+      </div>
+      <div id="heading-description">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam dolor dicta
+          recusandae ad repellat laboriosam facere quis beatae, quo ex. Voluptates debitis eos non sunt?
+        </p>
+      </div>
+      <div class="heading-contact-info">
+        <p class="text">2022.06.27(MON) ~ 30(THURS)</p>
+        <p>@ Priscaville Gardens Badagry</p>
+      </div>
+      
+    </section>
+    <!-- Statistics section -->
+    <section id="statistics">
+      <h2 class="stats-heading">Statistics</h2>
+      <div class="statistics-grid">
+        <!-- Card One -->
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-person-chalkboard"></i>
+          </div>
+          <div class="title">
+            <h4>Teachers</h4>
+          </div>
+          <div class="description">
+            <p>We have trained proffessionals who are mostly examiners.</p>
+          </div>
         </div>
-        <div class="desktop-nav">
-            <a href="Index.html" id="logo">HackingHerCode</a>
-            <ul id="nav-links">
-                <li><a href="#heading">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#register-section" >Register</a></li>
-                <li><a href="#sponsor-sections">Sponsors</a></li>
-                <li><a href="#teachers-section">Teachers</a></li>
-                <li><a href="#" id="last-child">HackingHerCode</a></li>
-              </ul>
-        </div>
-    </header>
-    <main>
-        <!-- Heading section -->
-        <section>
-            <div id="heading">
-                <h1 id="heading-text">
-                    HackingHercode Bootcamp 2022.
-                  </h1>
-                </div>
-                <div id="heading-description">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam dolor dicta 
-                    recusandae ad repellat laboriosam facere quis beatae, quo ex. Voluptates debitis eos non sunt?
-                  </p>
-                </div>
-                <div class="heading-contact-info">
-                 <p class="text">2022.06.27(MON) ~ 30(THURS)</p> 
-                 <p>@ Priscaville Gardens Badagry</p>
-                </div>
+          <!-- Card two -->
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-people-group"></i>
             </div>
-        </section>
-        <!-- Statistics section -->
-        <section id="statistics">
-            <h2 class="stats-heading">Statistics</h2>
-          <div class="statistics-grid">
-              <!-- Card One -->
-              <div class="card">
-                  <div class="icon">
-                    <i class="fa-solid fa-person-chalkboard"></i>                  </div>
-                <div class="title">
-                  <h4>Teachers</h4>
-                </div>
-                <div class="description">
-                  <p>We have trained proffessionals who are mostly examiners.</p>
-                </div>
-                <!-- Card two -->
-              <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-people-group"></i>                </div>
-                </div>
+          
+          <div class="title">
+            <h4>Campers</h4>
+          </div>
+          <div class="description">
+            <p>We have trained proffessionals who are mostly examiners.</p>
+          </div>
+        </div>
+          <!-- Card three -->
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-book-open"></i>
+              </div>
               <div class="title">
-                <h4>Campers</h4>
-              </div>
-              <div class="description">
-                <p>We have trained proffessionals who are mostly examiners.</p>
-              </div>
-              <!-- Card three -->
-              <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-book-open"></i>              <div class="title">
                 <h4>Courses</h4>
               </div>
               <div class="description">
                 <p>We have trained proffessionals who are mostly examiners.</p>
               </div>
+            </div>
               <!-- Card four -->
               <div class="card">
                 <div class="icon">
-                    <i class="fa-solid fa-person-hiking"></i>                </div>
-              <div class="title">
-                <h4>ExtraCurricullumn</h4>
+                  <i class="fa-solid fa-person-hiking"></i>
+                </div>
+                <div class="title">
+                  <h4>Extras</h4>
+                </div>
+                <div class="description">
+                  <p>We have trained proffessionals who are mostly examiners.</p>
+                </div>
               </div>
-              <div class="description">
-                <p>We have trained proffessionals who are mostly examiners.</p>
-              </div>
-              <!-- Card five -->
-              <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-globe"></i>                </div>
-              <div class="title">
-                <h4>Countries</h4>
-              </div>
-              <div class="description">
-                <p>We have trained proffessionals who are mostly examiners.</p>
-              </div>
-            </div>
-            <button type="button" id="reg">Register for Free</button>
-        </section>
-        <!-- Teachers info section -->
-        <section id="teachers-section">
-            <h2 class="facilitators">Facilitators</h2>
-            <div class="facilitators-info">
-               
-            </div>
-        </section>
-    </main>
-    <!-- Sponsors section  -->
-    <footer id="sponsor-sections">
-       <div id="sponsors-container">
-          <img src="./Assets/SLALogo.png" alt="SLA logo">
-          <img src="./Assets/linkedin.jpg" alt="linkedin logo">
-          <img src="./Assets/youtube.jpg" alt="youtube logo">
-          <img src="./Assets/facebook.jpg" alt="facebook logo">
-          <img src="./Assets/google.jpg" alt="google logo">
-          <p>Hope Alive Foundation</p>
-         </div>
-    </footer>
-<script src="./script.js"></script>
+                <!-- Card five -->
+                <div class="card">
+                  <div class="icon">
+                    <i class="fa-solid fa-globe"></i>
+                   </div>
+                  <div class="title">
+                    <h4>Countries</h4>
+                  </div>
+                  <div class="description">
+                    <p>We have trained proffessionals who are mostly examiners.</p>
+                  </div>
+                </div>
+      </div>
+                <button type="button" id="reg">Register for Free</button>
+    </section>
+    <!-- Teachers info section -->
+    <section id="teachers-section">
+      <h2 class="facilitators">Facilitators</h2>
+      <div id="facilitators-persons">
+        
+      </div>
+    </section>
+  </main>
+  <!-- Sponsors section  -->
+  <footer id="sponsor-sections">
+    <h3>Patners</h3>
+    <hr id="line">
+    <div id="sponsors-container">
+      <img src="./Assets/SLALogo.png" alt="SLA logo">
+      <img src="./Assets/linkedin.jpg" alt="linkedin logo">
+      <img src="./Assets/youtube.jpg" alt="youtube logo">
+      <img src="./Assets/facebook.jpg" alt="facebook logo">
+      <img src="./Assets/google.jpg" alt="google logo">
+      <p>Hope Alive Foundation</p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
 </body>
+
 </html>

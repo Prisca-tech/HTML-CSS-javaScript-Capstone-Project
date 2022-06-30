@@ -18,17 +18,14 @@ a {
     color: inherit;
 }
 
-img {
-    width: 400px;
-    height: 250px;
-}
-
 header {
-    background-color: fff;
-    position: relative; 
-}
-
-
+    background-color: white;
+    box-shadow: 0 3px 10px 0 #4b4b4b73;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
 
 h1, h2, h3, h4 {
     font-family: 'COCOGOOSE', Georgia, serif;
@@ -36,6 +33,7 @@ h1, h2, h3, h4 {
 
 .fa-solid {
     font-size: 30px;
+    
 }
 
 .mobile-nav {
@@ -44,10 +42,15 @@ h1, h2, h3, h4 {
 
 .desktop-nav{
     display: none;
-} 
+}
+
+.hide {
+    display: none;
+}
+
 .desktop-nav.show {
     display: block;
-    background: fff;
+    background: white;
     width: 100%;
     height: 95vh;
     text-align: center;
@@ -57,16 +60,17 @@ h1, h2, h3, h4 {
     top: 0;
     box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
     left: 0;
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 10px 10px;
     font-size: 20px;
     z-index: -1;
     transition: all 0.5s;
-}
+  }
 
 /*  Heading section */
 #heading {
     padding: 100px 20px 20px;
     position: relative;
+
 }
 
 #heading::after {
@@ -94,13 +98,13 @@ h1, h2, h3, h4 {
 }
 
 #heading-description {
-    padding: 12px 16px;
     background-color: #f5f5f5;
     box-shadow: rgb(0 0 0 / 20%) 0 0 6px;
+    padding: 10px;
 }
   
 .heading-contact-info {
-    padding: 20px;
+    padding: 10px;
     font-size: 18px;
 }
 
@@ -119,13 +123,13 @@ h1, h2, h3, h4 {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    position: relative;
     color: fff;
 }
   
 .statistics-grid {
-    display: grid;
+    display: flex;
     gap: 10px;
+    flex-direction: column;
 }
   
 .stats-heading {
@@ -203,40 +207,54 @@ h1, h2, h3, h4 {
 }
   
 .facilitators-info {
-    display: grid;
-    gap: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
 }
-  
-.teachers {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 40% 50%;
-    gap: 20px;
-    max-width: 370px;
+
+.facilitators-info__words {
+    display: flex;
+    flex-direction: column;
+}
+
+.facilitators-info hr {
+    width: 10%;
+    margin-top: 10px;
 }
   
 .teacher-img {
     display: grid;
     justify-content: center;
     align-items: center;
+    width: 35%;
+}
+
+.teacher-img img {
+  width: 100%;
+  height: 100px;
 }
   
 .name {
-    width: 30px;
-    background-color: #d3d3d3;
-    height: 1px;
-    border: none;
-    margin-top: 5px;
+display: flex;
+align-items: start;
+font-size: 1.5rem;
+}
+
+.name p {
+    margin-top: -10px;
+    font-weight: 700;
 }
   
 .designation {
     font-style: italic;
+    font-weight: 400;
+    color: #ec5242;
 }
   
 .teacher-text {
     font-size: 12px;
-    margin-top: 10px;
 }
   
 /* Sponsors Section */
@@ -249,14 +267,23 @@ h1, h2, h3, h4 {
     background-color: #272a31;
     color: #8d8d8d;
 }
-  
+
+#line {
+    width: 30px;
+    margin: auto;
+    border: 1px solid #ec5242;
+    background-color: #ec5242;
+
+}
+
 #sponsors-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 80%;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 10px;
 }
   
 #sponsors-container * {
@@ -279,7 +306,18 @@ footer {
   
 /* Desktop Version */
 @media only screen and (min-device-width: 768px) {
+
  /* Heading section */
+    #heading {
+       padding: 0;
+    }
+
+    #heading-text {
+        font-size: 62px;
+        width: 700px;
+        padding-top: 50px;
+    }
+    
   
    .mobile-nav {
       display: none;
@@ -288,17 +326,16 @@ footer {
     .desktop-nav {
       display: flex;
       justify-content: space-between;
-      padding-right: 170px;
-      padding-left: 250px;
-    }
-  
-    #logo {
-      display: inline;
-      height: 60px;
+      padding: 20px;
     }
   
     .close-menu * {
       padding-right: 20px;
+    }
+
+    #logo {
+        font-size: 20px;
+       font-weight: 900;
     }
   
     #nav-links {
@@ -307,6 +344,8 @@ footer {
       justify-content: center;
       align-items: center;
       gap: 20px;
+      font-size: 18px;
+      font-weight: 600;
     }
   
     #nav-links *:hover {
@@ -316,64 +355,106 @@ footer {
   
     #last-child {
       border: 4px solid #ec5242;
+      color: #ec5242;
+      padding: 0 20px;
     }
   
     /* Headline Section */
-    #heading {
-      display: flex;
-      flex-direction: column;
-      background-image: url('./Assets/background.jpg');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      padding-top: 200px;
-      padding-left: 250px;
-      opacity: 0.2;
-      content: "";
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: -1;
-    }
-  
-    #heading-text {
-      font-size: 55px;
-    }
+
   
     #heading-description {
-      max-width: 600px;
+      width: 700px;
       font-size: 24px;
+      padding: 10px;
+      border: 2px solid rgb(206, 181, 181);
+      margin-top: 20px;
     }
   
     .heading-contact-info {
-      color: white;
       font-size: 25px;
+      width: 700px;
+      margin-top: 50px;
+    }
+    
+    #one {
+        padding: 10rem 5rem 8rem 4rem;
+    }
+
+    #one::after {
+        background: url(./Assets/background.jpg);
+        opacity: 0.2;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -100;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .text {
+        font-size: 30px;
     }
   
     /* Statistics Section */
     #statistics {
       margin-top: 30px;
-      padding: 100px;
+      padding: 4rem 2rem;
     }
   
-    #statistics-grid {
+    .statistics-grid {
+      display: grid;
       grid-template-columns: repeat(5, auto);
-      width: 80%;
+      gap: 3px;
+      width: 90%;
     }
   
     .card {
       display: grid;
       text-align: center;
+      height: 250px;
+      width: 220px;
+    }
+
+    .facilitators-info {
+        display: flex;
+        width: 100%;
+        justify-content: normal;
+        margin-top: 20px;
+        gap: 30px;
     }
   
     /* TEACHERS SECTION */
-    .facilitators-info {
-      grid-template-columns: auto auto;
+    #facilitators-persons {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 30px;
+        width: 60%;
+    }
+
+    .teacher-img {
+        display: flex;
+        align-items: center;
+        width: 300px;
+    }
+
+    .teacher-img img {
+       height: 200px; 
     }
   
     .teachers {
-      max-width: 500px;
+      max-width: 600px;
+    }
+
+   .designation, .teacher-text {
+        font-size: 20px;
+    } 
+
+    .name {
+        font-size: 26px;
     }
   
     #sponsors-section {
