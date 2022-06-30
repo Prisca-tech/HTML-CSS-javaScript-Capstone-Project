@@ -2,8 +2,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # HTML-CSS-javaScript-Capstone-Project
-## Live Demo
-[Live Demo Link](https://)
+## Live Video
+[Video Link](https://www.loom.com/share/342453aa60634bdd8b0e9f98a537b946)
 
 > HTML/CSS & JavaScript capstone project.
 
@@ -17,6 +17,9 @@
 ## Original Design by
 👤 **Cindy Shin**
 - Behance: [@adgio07](https://www.behance.net/adagio07)
+
+## Live Demo
+[Live Demo Link](https://prisca-tech.github.io/HTML-CSS-javaScript-Capstone-Project/)
 
 ## Author
 👤 **Okoro Priscilla Oyome**
