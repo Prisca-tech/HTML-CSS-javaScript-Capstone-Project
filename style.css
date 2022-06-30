@@ -378,6 +378,7 @@ footer {
     
     #one {
         padding: 10rem 5rem 8rem 4rem;
+        margin-left: 60px;
     }
 
     #one::after {
@@ -409,14 +410,14 @@ footer {
       display: grid;
       grid-template-columns: repeat(5, auto);
       gap: 3px;
-      width: 90%;
+      width: auto;
     }
   
     .card {
       display: grid;
       text-align: center;
       height: 250px;
-      width: 220px;
+      width: 250px;
     }
 
     .facilitators-info {
@@ -459,5 +460,9 @@ footer {
   
     #sponsors-section {
       padding: 100px;
+    }
+
+    footer h3{
+        font-size: 30px;
     }
 };
