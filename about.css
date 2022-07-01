@@ -192,11 +192,18 @@ h4 {
 }
 
 /* Footer */
-footer {
+.footer-container {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   background-color: #f5f5f5;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo {
+  font-weight: 900;
+  font-size: 20px;
 }
 
 /* desktop version */
@@ -305,5 +312,9 @@ footer {
 
   .sponsors-section {
     padding: 100px;
+  }
+
+  .footer-container {
+    gap: 30px;
   }
 }

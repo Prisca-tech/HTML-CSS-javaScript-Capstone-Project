@@ -301,11 +301,18 @@ h4 {
 }
 
 /* Footer */
-footer {
+.footer-container {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  align-items: center;
   background-color: #f5f5f5;
+  padding: 10px;
+  gap: 15px;
+}
+
+.footer-logo {
+  font-weight: 900;
+  font-size: 20px;
 }
 
 /* Desktop Version */
@@ -333,11 +340,6 @@ footer {
 
   .close-menu * {
     padding-right: 20px;
-  }
-
-  .logo {
-    font-size: 20px;
-    font-weight: 900;
   }
 
   .desktop-nav-2 {
@@ -472,7 +474,7 @@ footer {
     padding: 100px;
   }
 
-  footer h3 {
-    font-size: 30px;
+  .footer-container {
+    gap: 30px;
   }
 }
