@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  background-color: #fff;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'COCOGOOSE', Georgia, serif;
+}
+
+.fa-solid {
+  font-size: 30px;
+}
+
+.mobile-nav {
+  padding: 20px;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.desktop-nav.show {
+  display: block;
+  background: #fff;
+  width: 100%;
+  height: 95vh;
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 20px;
+  top: 0;
+  box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
+  left: 0;
+  border-radius: 0 0 10px 10px;
+  font-size: 20px;
+  z-index: -1;
+}
+
+.heading {
+  padding: 100px 20px 20px;
+  position: relative;
+}
+
+.heading::after {
+  background: url(./Assets/girls-background.png);
+  opacity: 0.2;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -100;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-heading {
+  font-size: 35px;
+  background-image: linear-gradient(to bottom right, rgba(236, 82, 66, 0.8) 40%, rgba(236, 82, 66, 0.5) 60%), url('./Assets/background.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-description {
+  padding: 12px 16px;
+  border: 4px solid #eee;
+  background-color: #f5f5f5;
+  box-shadow: rgb(0 0 0 / 20%) 0 0 6px;
+}
+
+.about-contact-info {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.about-initiative {
+  text-align: center;
+  color: #565656;
+  padding: 25px 15px;
+}
+
+#event-container {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  justify-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  gap: 30px;
+  margin: auto;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  min-width: 340px;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+#event1 {
+  background-image: linear-gradient(to bottom, rgba(197, 28, 10, 0.8) 20%, rgba(126, 21, 9, 0.8) 80%), url('./Assets/bootcamp.avif');
+}
+
+#event2 {
+  background-image: linear-gradient(to bottom, rgba(197, 28, 10, 0.8) 20%, rgba(126, 21, 9, 0.8) 80%), url('./Assets/bootcamp2.avif');
+}
+
+.event-text {
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+/* Sponsors Section */
+.sponsor-sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #272a31;
+  color: #8d8d8d;
+}
+
+.line {
+  width: 30px;
+  margin: auto;
+  border: 1px solid #ec5242;
+  background-color: #ec5242;
+}
+
+.sponsors-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.sponsors-container * {
+  width: 15%;
+  filter: grayscale(100%) contrast(30%);
+  transition: filter 1s 1ms;
+  margin: 3px 5px;
+}
+
+.sponsors-container *:hover {
+  filter: grayscale(0%) contrast(100%);
+}
+
+/* Footer */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.footer-text p {
+  margin-bottom: 10px;
+}
+
+/* desktop version */
+
+@media screen and (min-width: 768px) {
+  /* nav session */
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px 20px 20px;
+  }
+
+  .close-menu * {
+    padding-right: 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  #nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  #nav-links *:hover {
+    cursor: pointer;
+    color: #ec5242;
+  }
+
+  .last {
+    padding: 0 20px;
+    border: 4px solid #ec5242;
+    color: #ec5242;
+  }
+
+  /* header session */
+  .heading {
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-heading {
+    font-size: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+  }
+
+  .about-description {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    padding: 20px;
+    color: #515151;
+  }
+
+  .about-contact-info {
+    font-size: 13px;
+  }
+
+  /*  About the initiative  */
+  .about-initiative {
+    font-size: 16px;
+    padding: 40px;
+  }
+
+  #event-container {
+    grid-template-columns: repeat(2, auto);
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .events {
+    padding: 60px;
+    display: grid;
+  }
+
+  .events h4 {
+    font-size: 35px;
+  }
+
+  #event-desc {
+    max-width: 40%;
+    font-size: 16px;
+  }
+
+  #event-card {
+    width: 500px;
+    height: 320px;
+  }
+
+  .sponsors-section {
+    padding: 100px;
+  }
+
+  .footer-container {
+    gap: 30px;
+  }
+
+  .footer-text p {
+    margin-bottom: 10px;
+  }
+}
